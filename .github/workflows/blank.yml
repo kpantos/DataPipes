@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        if: env.ENABLE_TEARDOWN == 'false'
+        if: env.ENABLE_TEARDOWN == var.ENABLE_TEARDOWN
         run: echo Hello, world!
 
       # Runs a set of commands using the runners shell
